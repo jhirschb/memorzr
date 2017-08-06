@@ -1,3 +1,3 @@
 # memorzr
 
-Some code snippets, templates and patterns.
+Some code snippets for different languages and environments.
