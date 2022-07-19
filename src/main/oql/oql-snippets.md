@@ -1,7 +1,7 @@
 ## Simple OQL queries for use in JVisualVM
 
-Query Java heap dumps in JVisualVm
-find an old version of the docs [here](https://htmlpreview.github.io/?https://raw.githubusercontent.com/visualvm/visualvm.java.net.backup/master/www/docindex.html)
+Query Java heap dumps in JVisualVm. 
+Find an old version of the docs [here](https://htmlpreview.github.io/?https://raw.githubusercontent.com/visualvm/visualvm.java.net.backup/master/www/docindex.html)
 
 ### Filter HashMaps
 Shows navigation in java objects and simple filtering
