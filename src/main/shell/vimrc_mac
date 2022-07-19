@@ -1,0 +1,78 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'mileszs/ack.vim'
+Plugin 'preservim/nerdtree'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-autoformat/vim-autoformat'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'vim-python/python-syntax'
+Plugin 'myhere/vim-nodejs-complete'
+Plugin 'junegunn/fzf'
+Plugin 'tpope/vim-fugitive'
+Plugin 'fatih/vim-go'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'rudrab/vimf90'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'neoclide/coc.nvim'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+set undofile
+set undodir=~/.vimundo/
+set autowrite
+
+let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
+let mapleader=","
+set timeoutlen=500
+let fortran_leader = "."
+let fortran_linter = 2
+let fortran_dep_install = 3
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<C-b>"
+let g:UltiSnipsJumpBackwardTrigger="<C-z>"
+
+map <leader>t :NERDTreeToggle<CR>
+map <leader>h :nohl<CR>
+nmap <leader>r :!%:p<CR>
+
+set vb t_vb=
+set nu
+set foldenable
+set expandtab 
+set laststatus=2
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set autoindent
+set guioptions=eT
+set autoread
+set encoding=utf-8
+set foldmethod=indent
+set foldlevel=99
+set diffopt+=iwhite
+
+set background=dark
+syntax on
+
+if has('gui_running')
+  set macligatures
+  set termwinscroll=25000
+  set guifont=FiraCode-Retina:h12
+  set statusline=%<%F%h%m%r%h%w%y\ %{&ff}\ %{strftime(\"%d/%m/%Y-%H:%M\")}%=\ col:%c%V\ ascii:%b\ pos:%o\ lin:%l\,%L\ %P
+endif
+
+
